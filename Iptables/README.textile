@@ -14,13 +14,12 @@
 
 * Descomprimimos ambos archivos
 
-	unzip master.zip
+	@#unzip master.zip@
 
 
 * Le damos permisos a los archivos
 
-	chmod +x *.sh
-	* @blueprint/screen.css@
+	@#chmod +x *.sh@
 
 * Editamos los archivos y colocamos nuestras propias reglas
 
