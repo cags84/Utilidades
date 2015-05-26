@@ -36,7 +36,7 @@ h2. Como lo arrancamos desde la terminal?
 
 h2. Como limpiamos las reglas y para el firewall?
 
-	@#sh /root/scripts/stop.fw@
+	@#sh /root/scripts/stop.sh@
 	
 h2. Para ver las reglas
 
