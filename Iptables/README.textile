@@ -1,43 +1,43 @@
-# Para la instalación se debe hacer lo siguiente:
+h1. Para la instalación se debe hacer lo siguiente:
 
-* Crear un directorio en el root del servidor
+h2. Crear un directorio en el root del servidor
 	
 	@#mkdir /root/scripts@
 
-* Ingresar al directorio
+h2. Ingresar al directorio
 
 	@#cd /root/scripts@
  
-* Descargar los archivos
+h2. Descargar los archivos
 	
 	@# wget https://github.com/cags84/Utilidades/archive/master.zip@
 
-* Descomprimimos ambos archivos
+h2. Descomprimimos ambos archivos
 
 	@#unzip master.zip@
 
 
-* Le damos permisos a los archivos
+h2. Le damos permisos a los archivos
 
 	@#chmod +x *.sh@
 
-* Editamos los archivos y colocamos nuestras propias reglas
+h2. Editamos los archivos y colocamos nuestras propias reglas
 
 	@#vim /root/scripts/start.sh@
 	@#vim /root/scripts/stop.sh@
 
-* Cargamos al rc.local, para que arranque con la maquina:
+h2. Cargamos al rc.local, para que arranque con la maquina:
 
 	@#echo '/root/scripts/start.sh' >> /etc/rc.local@
 
-* Como lo arrancamos desde la terminal?
+h2. Como lo arrancamos desde la terminal?
 
 	@#sh /root/scripts/start.sh@
 
-* Como limpiamos las reglas y para el firewall?
+h2. Como limpiamos las reglas y para el firewall?
 
 	@#sh /root/scripts/stop.fw@
 	
-* Para ver las reglas
+h2. Para ver las reglas
 
 	@#iptables -L -nv@
