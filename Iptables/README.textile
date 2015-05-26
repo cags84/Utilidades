@@ -9,6 +9,10 @@ h2. Crear un directorio en el root del servidor
 h2. Ingresar al directorio
 
 	@#cd /root/scripts@
+	
+h2. Creamos el archivo vacío, donde van las ip's bloquedas
+	
+	@#touch /root/scripts/blocked.ips.txt  - Archivo donde van las ip's bloqueadas@
  
 h2. Instalamos GIT y solucionamos el problema con certificados "https":https://blog.breadncup.com/2011/06/09/skip-git-ssl-verification/
 
@@ -30,6 +34,8 @@ h2. Le damos permisos a los archivos
 	@#chmod +x *.sh@
 
 h2. Editamos los archivos y colocamos nuestras propias reglas
+* Editamos la variable IP_WAN, INTERNET,LAN_IN,SQUID_SERVER,SQUID_PORT,PUB_IF
+ ** Algo
 
 	@#vim /root/scripts/Utilidades/Iptables/start.sh@
 	@#vim /root/scripts/Utilidades/Iptables/stop.sh@
@@ -42,10 +48,16 @@ h2. Como lo arrancamos desde la terminal?
 
 	@#sh /root/scripts/Utilidades/Iptables/start.sh@
 
-h2. Como limpiamos las reglas y para el firewall?
+h2. Como limpiamos las reglas y paramos el firewall?
 
 	@#sh /root/scripts/Utilidades/Iptables/stop.sh@
 	
 h2. Para ver las reglas
 
 	@#iptables -L -nv@
+	
+h2. Creamos los alias para manejar de forma facil los scripts
+
+	@#alias startFW="sh /root/scripts/Utilidades/Iptables/start.sh"@
+	@#alias stopFW="sh /root/scripts/Utilidades/Iptables/stop.sh"@
+	@#alias verFW="iptables -L -nv"@
