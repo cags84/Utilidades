@@ -41,6 +41,7 @@ h2. Editamos los archivos y colocamos nuestras propias reglas
  ** @SQUID_SERVER@: IP en la interfaz donde va a recibir las peticiones Squid, normalmente la LAN.
  ** @SQUID_PORT@: Puerto de escucha del servidor proxy - Squid
  ** @PUB_IF@: Lo mismo que en la variable @INTERNET@
+ ** @Rutas Estaticas@: Agregamos las rutas estaticas al final del archivo de ser necesario
 
 	@#vim /root/scripts/Utilidades/Iptables/start.sh@
 	

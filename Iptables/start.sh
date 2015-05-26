@@ -1,4 +1,5 @@
 #!/bin/bash
+#
 # A Linux Shell Script with common rules for IPTABLES Firewall.
 # By default this script only open port 80, 22, 53 (input)
 # All outgoing traffic is allowed (default - output)
@@ -151,5 +152,8 @@ $IPT -A INPUT -p udp -i eth0 --dport 137:139 -j REJECT
 $IPT -A INPUT -j LOG
 $IPT -A FORWARD -j LOG
 $IPT -A INPUT -j DROP
+
+## Agregamos rutas estaticas de ser necesaro
+# Formato: route add -net red mascara_de_red mask gw puerta_de_enlace
  
 exit 0
