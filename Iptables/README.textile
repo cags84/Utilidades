@@ -1,6 +1,6 @@
 h1. Para la instalación se debe hacer lo siguiente:
 
-* Se tiene como base un servidor con sistema operativo linux [Centos, Ubuntu, Debian, etc], con las herramientas básica e instalado GIT.
+* Se tiene como base un servidor con sistema operativo linux [Centos, Ubuntu, Debian, etc], con las herramientas básicas.
 
 h2. Crear un directorio en el root del servidor
 	
@@ -15,7 +15,7 @@ h2. Instalamos GIT y solucionamos el problema con certificados "https":https://b
 	@#apt-get install git - [Debian, Ubuntu]@
 	@#export GIT_SSL_NO_VERIFY=1#@
 	
-	Para Centos y derivados:"https://www.howtoforge.com/how-to-install-the-latest-git-version-on-centos"
+	"Para Centos y derivados":https://www.howtoforge.com/how-to-install-the-latest-git-version-on-centos
 	
 h2. Descargar los archivos
 
