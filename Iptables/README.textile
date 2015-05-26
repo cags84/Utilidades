@@ -18,6 +18,8 @@ h2. Instalamos GIT y solucionamos el problema con certificados "https":https://b
 
 	@#apt-get install git - [Debian, Ubuntu]@
 	@#export GIT_SSL_NO_VERIFY=1 - Ignora verificación SSL@
+	@#git config --global user.name "Nombre Apellido"@
+	@#git config --global user.mail tumail@tudominio.com@	
 	
 	"Para Centos y derivados":https://www.howtoforge.com/how-to-install-the-latest-git-version-on-centos
 	
