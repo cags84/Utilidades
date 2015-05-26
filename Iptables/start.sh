@@ -1,4 +1,13 @@
 #!/bin/bash
+#
+# Version 1.0
+# Carlos Guzmán <cags84@gmail.com>
+#
+# Cambia donde encuentres lo siguiente, según este configurado su servidor:
+# X.X.X.X -> Las ips de la wan y donde va a escuhar el servidor
+# X -> Numero de la interfaz, ejem: eth0
+# 3128 -> Puerto de escucha del servidor
+#
 
 # Ruta de Iptables
 IPT="/sbin/iptables"
@@ -7,13 +16,13 @@ SPAMLIST="blockedip"
 # Mensaje devuelto en el LOG
 SPAMDROPMSG="BLOCKED IP DROP"
 # Interface conectada a la WAN
-INTERNET="eth1"
+INTERNET="ethX"
 # IP WAN
-IP_WAN="190.90.38.187"
+IP_WAN="X.X.X.X"
 # Interface conectada a la LAN
-LAN_IN="eth0"
+LAN_IN="ethX"
 # IP del servidor donde escucha
-SQUID_SERVER="10.116.80.103"
+SQUID_SERVER="X.X.X.X"
 # Puerto de Squid
 SQUID_PORT="3128"
  
@@ -31,7 +40,7 @@ modprobe ip_conntrack_ftp
  
 [ -f /root/scripts/blocked.ips.txt ] && BADIPS=$(egrep -v -E "^#|^$" /root/scripts/blocked.ips.txt)
  
-PUB_IF="eth1"
+PUB_IF="ethX"
  
 # Permitimos el acceso ilimitado a la maquina local
 $IPT -A INPUT -i lo -j ACCEPT
