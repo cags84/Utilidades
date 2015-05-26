@@ -10,12 +10,12 @@ h2. Ingresar al directorio
 
 	@#cd /root/scripts@
  
-h2. Instalamos GIT y solucionamos el problema con certificados https "ver":https://blog.breadncup.com/2011/06/09/skip-git-ssl-verification/
+h2. Instalamos GIT y solucionamos el problema con certificados "https":https://blog.breadncup.com/2011/06/09/skip-git-ssl-verification/
 
 	@#apt-get install git - [Debian, Ubuntu]@
-	@#export GIT_SSL_NO_VERIFY=1#
+	@#export GIT_SSL_NO_VERIFY=1#@
 	
-	"https://www.howtoforge.com/how-to-install-the-latest-git-version-on-centos":Centos y derivados
+	Para Centos y derivados:"https://www.howtoforge.com/how-to-install-the-latest-git-version-on-centos"
 	
 h2. Descargar los archivos
 
