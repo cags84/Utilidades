@@ -34,7 +34,7 @@ h2. Le damos permisos a los archivos
 	@#chmod +x *.sh@
 
 h2. Editamos los archivos y colocamos nuestras propias reglas
-* Editamos @start.sh@ las variables:
+* Editamos @start.sh@, las variablesa modificar son:
  ** @IP_WAN@: IP de la interfaz WAN, Ejm: 208.67.220.220
  ** @INTERNET@: Interfaz de la WAN, Ejm: eth1
  ** @LAN_IN@: Interfaz conectada a la LAN, Ej: eth0
@@ -44,7 +44,7 @@ h2. Editamos los archivos y colocamos nuestras propias reglas
 
 	@#vim /root/scripts/Utilidades/Iptables/start.sh@
 	
-* El arvhivo @stop.sh@ no hay necesidad de editarlo.
+* El archivo @stop.sh@ no hay necesidad de editarlo.
 
 	@#vim /root/scripts/Utilidades/Iptables/stop.sh@
 
