@@ -8,14 +8,18 @@ h2. Ingresar al directorio
 
 	@#cd /root/scripts@
  
-h2. Descargar los archivos
+h2. Instalamos GIT y solucionamos el problema con certificados https [ver](https://blog.breadncup.com/2011/06/09/skip-git-ssl-verification/).
+
+	@#apt-get install git@
+	@#export GIT_SSL_NO_VERIFY=1#
 	
-	@# wget https://github.com/cags84/Utilidades/archive/master.zip@
+h2. Descargar los archivos
 
-h2. Descomprimimos ambos archivos
+	@#git clone https://github.com/cags84/Utilidades/@
 
-	@#unzip master.zip@
+h2. Ingresamos a la carpeta del repositorio
 
+	@#cd /root/scripts/Utilidades/Iptables/@
 
 h2. Le damos permisos a los archivos
 
