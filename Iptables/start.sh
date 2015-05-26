@@ -153,7 +153,10 @@ $IPT -A INPUT -j LOG
 $IPT -A FORWARD -j LOG
 $IPT -A INPUT -j DROP
 
-## Agregamos rutas estaticas de ser necesaro
-# Formato: route add -net red mascara_de_red mask gw puerta_de_enlace
+## Agregamos rutas estaticas de ser necesario.
+# red: La red a alcanzar ej: 192.168.82.0
+# mascara_de_red: La mascara de red ej: 255.255.255.0 - /24
+# puerta_de_enlace: Por donde vamos alcanzar esa red ej: 192.168.82.1
+# Formato: route add -net red netmask mascara_de_red gw puerta_de_enlace
  
 exit 0
