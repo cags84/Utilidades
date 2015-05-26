@@ -31,20 +31,20 @@ h2. Le damos permisos a los archivos
 
 h2. Editamos los archivos y colocamos nuestras propias reglas
 
-	@#vim /root/scripts/start.sh@
-	@#vim /root/scripts/stop.sh@
+	@#vim /root/scripts/Utilidades/Iptables/start.sh@
+	@#vim /root/scripts/Utilidades/Iptables/stop.sh@
 
 h2. Cargamos al rc.local, para que arranque con la maquina:
 
-	@#echo '/root/scripts/start.sh' >> /etc/rc.local@
+	@#echo '/root/scripts/Utilidades/Iptables/start.sh' >> /etc/rc.local@
 
 h2. Como lo arrancamos desde la terminal?
 
-	@#sh /root/scripts/start.sh@
+	@#sh /root/scripts/Utilidades/Iptables/start.sh@
 
 h2. Como limpiamos las reglas y para el firewall?
 
-	@#sh /root/scripts/stop.sh@
+	@#sh /root/scripts/Utilidades/Iptables/stop.sh@
 	
 h2. Para ver las reglas
 
