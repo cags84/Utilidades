@@ -20,6 +20,7 @@
 * Le damos permisos a los archivos
 
 	chmod +x *.sh
+	* @blueprint/screen.css@
 
 * Editamos los archivos y colocamos nuestras propias reglas
 
