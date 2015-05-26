@@ -1,5 +1,15 @@
 #!/bin/bash
+# A Linux Shell Script with common rules for IPTABLES Firewall.
+# By default this script only open port 80, 22, 53 (input)
+# All outgoing traffic is allowed (default - output)
+# -------------------------------------------------------------------------
+# Copyright (c) 2004 nixCraft project <http://cyberciti.biz/fb/>
+# This script is licensed under GNU GPL version 2.0 or above
+# -------------------------------------------------------------------------
+# This script is part of nixCraft shell script collection (NSSC)
+# Visit http://bash.cyberciti.biz/ for more information.
 #
+# Modificado: 26/05/2015
 # Version 1.0
 # Carlos Guzmán <cags84@gmail.com>
 #
